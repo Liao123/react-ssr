@@ -1,9 +1,11 @@
-import React from 'react'
-import {render} from 'react-dom'
-import './style/index.scss';
-import logo from './static/google.png'
+import React from 'react';
+import { render } from 'react-dom';
+import { BrowserRouter } from 'react-router-dom';
+import Router from './router'
 
-function App(){
-    return <div><img src={logo} />Hello React</div>
-}
-render(<App />, document.getElementById('app'));
+render(
+    <BrowserRouter>
+        <Router/>
+    </BrowserRouter>,
+    document.getElementById('app')
+);

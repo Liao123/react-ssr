@@ -17,3 +17,7 @@
 6.在build下新建webpack.dev.config.js
 7.npm i -D webpack-merge 安装下webpack-merge
 8.npm i -D html-loader style-loader css-loader less-loader url-loader file-loader less  下载需要的loader以及less     这边可以换成sass https://www.jianshu.com/p/1f3ac99c0a29
+9.npm i -S koa 安装koa
+10.npm i -S @babel/register  使用@babel/register在node运行时候编译我们的jsx代码以及es6语法
+11.npm i -S react-router-dom 安装react-路由
+12.先下载 npm i -S koa-router 开始ssr 安装后端路由
