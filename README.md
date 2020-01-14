@@ -21,3 +21,7 @@
 10.npm i -S @babel/register  使用@babel/register在node运行时候编译我们的jsx代码以及es6语法
 11.npm i -S react-router-dom 安装react-路由
 12.先下载 npm i -S koa-router 开始ssr 安装后端路由
+13.服务端渲染 不刷新 其实就是走的前端路由 后端动态渲染源文件代码而已
+14.下载npm i redux react-redux -S 开始用到状态管理了
+第二篇
+15.npm i react-router-config -S 安装
