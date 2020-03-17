@@ -1,0 +1,17 @@
+{
+    "presets": [
+        [
+            "env",
+            {
+                "loose": true,
+                "modules": false
+            }
+        ],
+        "es2015", // 也是语法转换
+        "react",
+        "babel-preset-stage-3" //使用这个插件来编译为了后面使用...state扩展运算符可以使用
+    ],
+    "plugins": [
+        "transform-runtime" // 减少打包体积 主要是抽取了编译文件的一些辅助函数 到公共文件里面 不用每个文件都有重复代码
+    ]
+}
