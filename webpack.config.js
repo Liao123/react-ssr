@@ -3,6 +3,7 @@ const path = require('path');
 let HtmlWebpackPlugin = require('html-webpack-plugin');
 // css 抽离为文件
 let ExtractTextWebpackPlugin = require('extract-text-webpack-plugin');
+// 清楚文件夹 eg:dist
 const {CleanWebpackPlugin} = require("clean-webpack-plugin");
 let webpack = require('webpack');
 
@@ -73,12 +74,12 @@ module.exports = {
             // 在src目录下创建一个index.html页面当做模板来用
             template: './src/index.html',
             hash: true, // 会在打包好的bundle.js后面加上hash串
-            minify: { // 压缩HTML文件
-                removeComments: true, // 移除HTML中的注释
-                collapseWhitespace: true, // 删除空白符与换行符
-                minifyCSS: true // 压缩内联css
-            },
-            chunks: ['vendor', 'index', 'utils'] //  引入需要的chunk 这个模板 需要引入哪些公共抽离文件
+            // minify: { // 压缩HTML文件
+            //     removeComments: true, // 移除HTML中的注释
+            //     collapseWhitespace: true, // 删除空白符与换行符
+            //     minifyCSS: true // 压缩内联css
+            // },
+            // chunks: ['vendor', 'index', 'utils'] //  引入需要的chunk 这个模板 需要引入哪些公共抽离文件
         })
     ],
     devServer: { // 开发服务器配置
