@@ -1,2 +1,6 @@
-dist/
-node_modules/
+
+assets
+node_modules
+.svn
+.cache
+package-lock.json
